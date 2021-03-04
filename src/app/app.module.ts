@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NzAntModule} from './nz-ant/nz-ant.module';
+import {BooksExplorerModule} from './books-explorer/books-explorer.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {NzAntModule} from './nz-ant/nz-ant.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BooksExplorerModule,
     NzAntModule,
   ],
   providers: [],
