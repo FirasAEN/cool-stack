@@ -16,6 +16,6 @@ export class BooksExplorerSelector {
 
   public isLoading(): Observable<boolean> {
     // tslint:disable-next-line:no-shadowed-variable
-    return this.state.pipe(map((state) => state.isLoading));
+    return this.state.pipe(map((state) => state.items.isLoading));
   }
 }

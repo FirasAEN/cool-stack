@@ -1,14 +1,15 @@
 import {Action, createReducer, on} from '@ngrx/store';
 import * as BooksExplorerActions from './books-explorer.actions';
+import {BooksListEntity} from '../books/books-list.entity';
 
 export const booksStateKey = 'books';
 
 export interface IBooksExplorerState {
-  isLoading: boolean;
+  items: BooksListEntity;
 }
 
 export const initialBooksExplorerState: IBooksExplorerState = {
-  isLoading: true,
+  items: BooksListEntity.default(),
 };
 
 const reducer = createReducer<IBooksExplorerState>(
@@ -16,13 +17,13 @@ const reducer = createReducer<IBooksExplorerState>(
   on(BooksExplorerActions.toggleOff, (state) => {
     return {
       ...state,
-      isLoading: false,
+      items: state.items.setLoading(false),
     };
   }),
   on(BooksExplorerActions.toggleOn, (state) => {
     return {
       ...state,
-      isLoading: true,
+      items: state.items.setLoading(true),
     };
   }),
 );
