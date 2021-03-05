@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent implements OnInit {
-  public isLoading = true;
   constructor() { }
 
   ngOnInit(): void {

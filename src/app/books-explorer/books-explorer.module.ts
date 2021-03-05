@@ -6,6 +6,8 @@ import { BooksExplorerRoutingModule } from './books-explorer-routing.module';
 import { BookComponent } from './book/book.component';
 import { BooksComponent } from './books/books.component';
 import {NzAntModule} from '../nz-ant/nz-ant.module';
+import {StoreModule} from '@ngrx/store';
+import * as state from './state';
 
 
 @NgModule({
@@ -18,6 +20,10 @@ import {NzAntModule} from '../nz-ant/nz-ant.module';
     NzAntModule,
     BooksExplorerRoutingModule,
     FormsModule,
+    StoreModule.forFeature(
+        state.booksStateKey,
+        state.booksExplorerReducer,
+      ),
   ]
 })
 export class BooksExplorerModule { }
