@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {select, Store} from '@ngrx/store';
-import {AppState, BooksExplorerSelector, IBooksExplorerState} from '../state';
+import {AppState, BooksExplorerSelector, IBooksExplorerState} from '../../state';
 import {delay, filter, map, startWith, tap} from 'rxjs/operators';
-import * as BooksExplorerActions from '../state';
+import * as BooksExplorerActions from '../../state';
 import {BehaviorSubject, combineLatest, Observable, of} from 'rxjs';
 
 export interface ITest {

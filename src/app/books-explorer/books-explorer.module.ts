@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { BooksExplorerRoutingModule } from './books-explorer-routing.module';
-import { BookComponent } from './book/book.component';
-import { BooksComponent } from './books/books.component';
+import { BookComponent } from './components/book/book.component';
+import { BooksComponent } from './components/books/books.component';
 import {NzAntModule} from '../nz-ant/nz-ant.module';
 import {StoreModule} from '@ngrx/store';
 import * as state from './state';

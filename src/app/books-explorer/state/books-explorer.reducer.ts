@@ -1,7 +1,7 @@
 import {Action, createReducer, on} from '@ngrx/store';
 import * as BooksExplorerActions from './books-explorer.actions';
 import * as rootState from '../../state';
-import {BooksListEntity} from '../books/books-list.entity';
+import {BooksListEntity} from '../components/books/books-list.entity';
 
 export interface AppState extends rootState.AppState {
   books: IBooksExplorerState;
