@@ -21,9 +21,9 @@ import * as state from './state';
     BooksExplorerRoutingModule,
     FormsModule,
     StoreModule.forFeature(
-        state.booksStateKey,
-        state.booksExplorerReducer,
-      ),
+      state.booksStateKey,
+      state.booksExplorerReducer,
+    ),
   ]
 })
 export class BooksExplorerModule { }

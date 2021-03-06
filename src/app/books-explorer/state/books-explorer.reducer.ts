@@ -1,24 +1,10 @@
 import {Action, createReducer, on} from '@ngrx/store';
 import * as BooksExplorerActions from './books-explorer.actions';
-import * as rootState from '../../state';
-import {BooksListEntity} from '../components/books/books-list.entity';
+import * as featureState from './books-explorer.state';
 
-export interface AppState extends rootState.AppState {
-  books: IBooksExplorerState;
-}
 
-export const booksStateKey = 'books';
-
-export interface IBooksExplorerState {
-  items: BooksListEntity;
-}
-
-export const initialBooksExplorerState: IBooksExplorerState = {
-  items: BooksListEntity.default(),
-};
-
-const reducer = createReducer<IBooksExplorerState>(
-  initialBooksExplorerState,
+const reducer = createReducer<featureState.IBooksExplorerState>(
+  featureState.initialBooksExplorerState,
   on(BooksExplorerActions.toggleOff, (state) => {
     return {
       ...state,
@@ -34,7 +20,7 @@ const reducer = createReducer<IBooksExplorerState>(
 );
 
 export function booksExplorerReducer(
-  state: IBooksExplorerState,
-  action: Action): IBooksExplorerState {
+  state: featureState.IBooksExplorerState,
+  action: Action): featureState.IBooksExplorerState {
   return reducer(state, action);
 }
