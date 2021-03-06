@@ -23,11 +23,11 @@ import { EffectsModule } from '@ngrx/effects';
     NzAntModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
-    // StoreRouterConnectingModule.forRoot(
-    //   {
-    //     routerState:  RouterState.Full,
-    //   }
-    // ),
+    StoreRouterConnectingModule.forRoot(
+      {
+        routerState:  RouterState.Full,
+      }
+    ),
     StoreDevtoolsModule.instrument({
       maxAge: 100,
       logOnly: environment.production,
