@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {select, Store} from '@ngrx/store';
-import {BooksExplorerSelector, IBooksExplorerState} from '../state';
+import {AppState, BooksExplorerSelector, IBooksExplorerState} from '../state';
 import {delay, filter, map, startWith, tap} from 'rxjs/operators';
 import * as BooksExplorerActions from '../state';
 import {BehaviorSubject, combineLatest, Observable, of} from 'rxjs';
@@ -20,7 +20,7 @@ export class BooksComponent implements OnInit {
   }>;
   private isLoading$: Observable<boolean>;
 
-  constructor(private store: Store<any>, private booksExplorerSelector: BooksExplorerSelector) {
+  constructor(private store: Store<AppState>, private booksExplorerSelector: BooksExplorerSelector) {
     of(null).pipe(delay(2000)).subscribe(() => {
       this.store.dispatch(BooksExplorerActions.toggleOff());
     });
