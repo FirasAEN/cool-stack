@@ -3,7 +3,7 @@ interface IBooksListEntity {
 }
 
 const defaultValues: IBooksListEntity = {
-  isLoading: true,
+  isLoading: false,
 };
 
 

@@ -21,12 +21,12 @@ export class BooksComponent implements OnInit {
   private isLoading$: Observable<boolean>;
 
   constructor(private store: Store<AppState>, private booksExplorerSelector: BooksExplorerSelector) {
-    of(null).pipe(delay(2000)).subscribe(() => {
-      this.store.dispatch(BooksExplorerActions.toggleOff());
-    });
-    of(null).pipe(delay(5000)).subscribe(() => {
-      this.store.dispatch(BooksExplorerActions.toggleOn());
-    });
+    // of(null).pipe(delay(2000)).subscribe(() => {
+    //   this.store.dispatch(BooksExplorerActions.toggleOff());
+    // });
+    // of(null).pipe(delay(5000)).subscribe(() => {
+    //   this.store.dispatch(BooksExplorerActions.toggleOn());
+    // });
 
     this.isLoading$ = this.booksExplorerSelector.isLoading();
 

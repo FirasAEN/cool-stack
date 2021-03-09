@@ -11,6 +11,7 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment.prod';
 import {RouterState, StoreRouterConnectingModule} from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EffectsModule } from '@ngrx/effects';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     BooksExplorerModule,
     NzAntModule,
