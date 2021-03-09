@@ -8,7 +8,7 @@ import {NzSwitchModule} from 'ng-zorro-antd/switch';
 import {NzSpinModule} from 'ng-zorro-antd/spin';
 import {NzLayoutModule} from 'ng-zorro-antd/layout';
 import {NzBreadCrumbModule} from 'ng-zorro-antd/breadcrumb';
-import {IconsModule} from '../ui/icons/icons.module';
+import {IconsModule} from '../icons/icons.module';
 import {NzMenuModule} from 'ng-zorro-antd/menu';
 
 
