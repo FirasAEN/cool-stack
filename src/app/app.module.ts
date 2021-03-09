@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {NzAntModule} from './ui/nz-ant/nz-ant.module';
 import {BooksExplorerModule} from './books-explorer/books-explorer.module';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './state';
@@ -12,6 +11,7 @@ import {environment} from '../environments/environment.prod';
 import {RouterState, StoreRouterConnectingModule} from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {UiModule} from './ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     AppRoutingModule,
     BooksExplorerModule,
-    NzAntModule,
+    UiModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot(
