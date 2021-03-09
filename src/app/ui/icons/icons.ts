@@ -797,4 +797,5 @@ export const icons: Array<IconDefinition> = [
   TeamOutline,
   FileOutline,
   BookOutline,
+  SketchOutline,
 ];

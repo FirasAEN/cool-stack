@@ -1,8 +1,11 @@
 <div class="content" role="main">
-
   <nz-layout>
     <nz-sider nzCollapsible nzCollapsed="true" nzWidth="200px">
-      <div class="logo"></div>
+      <div class="logo">
+        <a href="#" [routerLink]="'/'"></a>
+        <i nz-icon nzType="sketch" nzTheme="outline">
+        </i>
+      </div>
       <ul nz-menu nzTheme="dark" nzMode="inline">
         <li nz-menu-item>
           <a [routerLink]="'/books'"></a>
@@ -25,7 +28,7 @@
         </div>
       </nz-content>
 
-      <nz-footer>
+      <nz-footer *ngIf="true">
         <div class="card-container">
           <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
             <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
