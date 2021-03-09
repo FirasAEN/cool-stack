@@ -1,16 +1,9 @@
 /* CSS HEX */
---prussian-blue: #003049ff;
---maximum-red: #d62828ff;
---orange: #f77f00ff;
---maximum-yellow-red: #fcbf49ff;
---lemon-meringue: #eae2b7ff;
-
-/* CSS HSL */
---prussian-blue: hsla(201, 100%, 14%, 1);
---maximum-red: hsla(0, 69%, 50%, 1);
---orange: hsla(31, 100%, 48%, 1);
---maximum-yellow-red: hsla(40, 97%, 64%, 1);
---lemon-meringue: hsla(51, 55%, 82%, 1);
+$prussian-blue: #003049ff;
+$maximum-red: #d62828ff;
+$orange: #f77f00ff;
+$maximum-yellow-red: #fcbf49ff;
+$lemon-meringue: #eae2b7ff;
 
 /* SCSS HEX */
 $prussian-blue: #003049ff;
