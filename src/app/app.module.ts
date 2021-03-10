@@ -12,6 +12,8 @@ import {RouterState, StoreRouterConnectingModule} from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {UiModule} from './ui/ui.module';
+import {HttpClientModule} from '@angular/common/http';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import {UiModule} from './ui/ui.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     BooksExplorerModule,
+    HttpClientModule,
+    CoreModule,
     UiModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
