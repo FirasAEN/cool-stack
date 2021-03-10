@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AppIconService} from './ui/app-icon.service';
 
 @Component({
   selector: 'aln-root',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alten-app';
+
+  constructor(private appIconService: AppIconService) {
+    this.appIconService.registerIcons();
+  }
 }

@@ -789,7 +789,7 @@ import { ZoomOutOutline } from '@ant-design/icons-angular/icons';
 
 import { IconDefinition } from '@ant-design/icons-angular';
 
-export const icons: Array<IconDefinition> = [
+export const ngZorroIcons: Array<IconDefinition> = [
   AlertOutline,
   QuestionOutline,
   HomeOutline,
