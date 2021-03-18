@@ -1,4 +1,4 @@
 export * from './icons.interface';
-export * from './icons';
-export * from './social';
-export * from './angular';
+export * from './ng-zorro.icons';
+export * from './social.icons';
+export * from './angular.icons';

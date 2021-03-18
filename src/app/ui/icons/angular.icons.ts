@@ -6,7 +6,15 @@ const animations: IAlnIconDefinition = {
 };
 
 
-export const angular: IIconNamespace = {
+export const angularIcons: IIconNamespace = {
   name: 'angular',
   icons: [animations],
 };
+
+
+
+export enum Angular {
+  Animations = `angular:animations`,
+}
+
+

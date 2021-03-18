@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import {NzIconModule} from 'ng-zorro-antd/icon';
-import {ngZorroIcons} from './icons';
+import {ngZorroIcons} from './ng-zorro.icons';
 
 
 @NgModule({

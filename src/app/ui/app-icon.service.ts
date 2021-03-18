@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import {NzIconService} from 'ng-zorro-antd/icon';
-import {angular, IAlnIconDefinition, IIconNamespace, social} from './icons';
+import {angularIcons, IAlnIconDefinition, IIconNamespace, socialIcons} from './icons';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppIconService {
-  private icons = [social, angular];
+  private iconNamespaces = [socialIcons, angularIcons];
   constructor(
     private ngZorroRegistry: NzIconService,
   ) { }
 
   public registerIcons(): void {
-    for (const iconNamespace of this.icons ) {
+    for (const iconNamespace of this.iconNamespaces ) {
       this.loadIcons(iconNamespace);
     }
   }

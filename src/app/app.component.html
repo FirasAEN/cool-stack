@@ -2,34 +2,33 @@
   <nz-layout>
     <nz-sider nzCollapsible nzCollapsed="true" nzWidth="200px">
       <div class="logo">
-        <a href="#" [routerLink]="'/'"></a>
-        <i nz-icon nzType="sketch" nzTheme="outline">
-        </i>
+        <a href="#" [routerLink]="'/dashboard'"></a>
+        <i nz-icon [nzType]="NgZorro.Sketch" nzTheme="outline"></i>
       </div>
       <ul nz-menu nzTheme="dark" nzMode="inline">
         <li nz-menu-item>
           <a [routerLink]="'/books'"></a>
-          <i nz-icon nzType="book"></i>
+          <i nz-icon [nzType]="NgZorro.Book"></i>
           <span>Books</span>
         </li>
         <li nz-menu-item>
           <a [routerLink]="'/dashboard'"></a>
-          <i nz-icon nzType="social:discord"></i>
+          <i nz-icon [nzType]="Social.Discord"></i>
           <span>Books</span>
         </li>
         <li nz-menu-item>
           <a [routerLink]="'/dashboard'"></a>
-          <i nz-icon nzType="social:meetup"></i>
+          <i nz-icon [nzType]="Social.Chrome"></i>
           <span>Books</span>
         </li>
         <li nz-menu-item>
           <a [routerLink]="'/dashboard'"></a>
-          <i nz-icon nzType="angular:animations"></i>
+          <i nz-icon [nzType]="Angular.Animations"></i>
           <span>Books</span>
         </li>
         <li nz-menu-item>
           <a [routerLink]="'/dashboard'"></a>
-          <i nz-icon nzType="social:chrome"></i>
+          <i nz-icon [nzType]="Social.Meetup"></i>
           <span>Books</span>
         </li>
       </ul>
